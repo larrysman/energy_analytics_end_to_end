@@ -8,9 +8,17 @@ wheels/
 
 # Virtual environments
 .venv
-energy_venv
 
 .python-version
 main.py
 pyproject.toml
+
+# DATABASE CONNECTION TO MYSQL
+.env
+config
+
+# DATASET FILES
+data/raw/energy_data.csv
+
+
 

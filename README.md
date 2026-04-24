@@ -35,3 +35,55 @@ And the project walks through the following:
 - Sensitivity analysis
 
 - Business recommendations
+
+
+### 🧠 `Business Problem`
+A retail energy supplier has seen a rise in billing complaints and customer dissatisfaction, especially in certain regions. They want to understand:
+
+- What drives complaints?
+
+- Are outages related?
+
+- Do tariff types influence customer behaviour?
+
+- What is the financial impact?
+
+- What actions should the business take?
+
+
+##### **Business-Oriented Schema Design**
+
+This schema guides the creation of the project data warehouse:
+
+- Table: energy_usage_raw
+
+- customer_id: customer identifier
+
+- region: geographic region ('North', 'South', 'East', 'West')
+
+- meter_id: meter identifier
+
+- timestamp_utc: reading timestamp
+
+- kwh: energy consumed in that interval
+
+- tariff_plan: 'fixed' or 'variable'
+
+- is_smart_meter: 0/1
+
+- outage_minutes_last_24h: minutes of outage in last 24 hours
+
+- bill_amount_eur: billed amount for that billing period (synthetic)
+
+- complaint_flag: 0/1 whether customer raised a billing complaint
+
+*Injected messiness to the energy dataset and they include:*
+
+- Missing region
+
+- Negative or zero kwh
+
+- Duplicate rows
+
+- Outliers in kwh and bill_amount_eur
+
