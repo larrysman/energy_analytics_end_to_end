@@ -19,6 +19,11 @@ config
 
 # DATASET FILES
 data/raw/energy_data.csv
+data/cleaned/energy_cleaned_data.csv
+data/engineered/energy_engineered_daily_aggregated_data.csv
+data/engineered/energy_engineered_data.csv
+
+
 
 
 

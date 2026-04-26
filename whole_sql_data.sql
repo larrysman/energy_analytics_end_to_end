@@ -1,0 +1,1 @@
+SELECT * FROM energy_consumption_data LIMIT 15;
